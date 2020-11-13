@@ -1,0 +1,21 @@
+.courses{
+    margin: 3% auto;
+    width: 85%;
+    padding: 0 3%;
+}
+.courses h1{
+    font-weight: 600;
+    font-size: 26px;
+    color: #555;
+    margin-bottom: 12px;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content div{
+    width: 30%;
+    margin-right: 5%;
+
+}
