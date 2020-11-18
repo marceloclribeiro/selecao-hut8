@@ -1,14 +1,14 @@
-.course{
+.course-component{
     margin-top: 20px;
     background-color: #fafafa;
     border-radius: 30px;
     padding-bottom: 20px;
 }
-.course img{
+.course-component img{
     border-radius: 30px 30px 0 0;
     width: 100%;
 }
-.course h1{
+.course-component h1{
     padding-left: 20px;
     font-weight: 400;
     font-size: 16px;
@@ -20,7 +20,7 @@
     font-size: 12px;
     color: #737373;
 }
-.class{
+.course-class{
     padding-left: 20px;
     font-weight: 400;
     font-size: 12px;

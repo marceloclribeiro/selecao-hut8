@@ -1,5 +1,5 @@
 .courses{
-    margin: 3% auto;
+    margin: 5% auto;
     width: 85%;
     padding: 0 3%;
 }
@@ -9,13 +9,10 @@
     color: #555;
     margin-bottom: 12px;
 }
+
 .content{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.content div{
-    width: 30%;
-    margin-right: 5%;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 5%;
 }
