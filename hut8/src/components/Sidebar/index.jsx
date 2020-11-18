@@ -1,14 +1,19 @@
+import React from 'react'
+import {Link} from 'react-router-dom'
 import './styles.css'
 function Sidebar(props){
 
     return (
         <div className="sidebar">
-            <img src={props.avatar} className="icon" alt="OLOCO BIXO"/>
+            <img src={props.avatar} className="icon" alt="Icone do usuario"/>
             <h2 className="user-name">{props.name}</h2>
             <p>{props.course}</p>
-
-            <h1 className="dashboard">Dashboard</h1>
-            <h1 className="courses">Meus cursos</h1>
+            <Link to= '/'>
+            <h1 className="dashboard-link">Dashboard</h1>
+            </Link>
+            <Link to= '/courses'>
+            <h1 className="courses-link">Meus cursos</h1>
+            </Link>
 
         </div>
     )

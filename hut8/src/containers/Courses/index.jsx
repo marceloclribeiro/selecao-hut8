@@ -1,4 +1,6 @@
+import React from 'react'
 import './styles.css'
+import {Link} from 'react-router-dom'
 import Course from '../../components/Course'
 function Courses(){
 
@@ -6,6 +8,20 @@ function Courses(){
       <div className="courses">
         <h1>Meus cursos</h1>
         <div className="content">
+          <Link to='/course'>
+            <Course 
+              course="Algoritmos e Programação"
+              type="Graduação"
+              class= "M52"
+              image="https://i.imgur.com/dSG2ZLX.jpg"
+            />
+          </Link>
+          <Course 
+            course= "Projeto de Banco de Dados"
+            type= "Graduação"
+            class= "M72"
+            image= "https://i.imgur.com/GpfCzWB.jpg"
+          />
           <Course 
             course="Algoritmos e Programação"
             type="Graduação"
@@ -13,10 +29,10 @@ function Courses(){
             image="https://i.imgur.com/dSG2ZLX.jpg"
           />
           <Course 
-            course= "Projeto de Banco de Dados"
-            type= "Graduação"
-            class= "M72"
-            image= "https://i.imgur.com/GpfCzWB.jpg"
+            course="Algoritmos e Programação"
+            type="Graduação"
+            class= "M52"
+            image="https://i.imgur.com/dSG2ZLX.jpg"
           />
           <Course 
             course="Algoritmos e Programação"
@@ -25,11 +41,12 @@ function Courses(){
             image="https://i.imgur.com/dSG2ZLX.jpg"
           />
           <Course 
-            course= "Projeto de Banco de Dados"
-            type= "Graduação"
-            class= "M72"
-            image= "https://i.imgur.com/GpfCzWB.jpg"
+            course="Algoritmos e Programação"
+            type="Graduação"
+            class= "M52"
+            image="https://i.imgur.com/dSG2ZLX.jpg"
           />
+          
         </div>
       </div>
     )
