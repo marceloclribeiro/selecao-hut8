@@ -2,51 +2,22 @@ import React from 'react'
 import './styles.css'
 import {Link} from 'react-router-dom'
 import Course from '../../components/Course'
-function Courses(){
+function Courses(props){
 
     return(
       <div className="courses">
         <h1>Meus cursos</h1>
         <div className="content">
-          <Link to='/course'>
+          {props.courses.map((course) =>
+          <Link to={`/course/${course.class}`}>
             <Course 
-              course="Algoritmos e Programação"
-              type="Graduação"
-              class= "M52"
-              image="https://i.imgur.com/dSG2ZLX.jpg"
+              course={course.course}
+              type={course.type}
+              class= {course.class}
+              image={course.image}
             />
           </Link>
-          <Course 
-            course= "Projeto de Banco de Dados"
-            type= "Graduação"
-            class= "M72"
-            image= "https://i.imgur.com/GpfCzWB.jpg"
-          />
-          <Course 
-            course="Algoritmos e Programação"
-            type="Graduação"
-            class= "M52"
-            image="https://i.imgur.com/dSG2ZLX.jpg"
-          />
-          <Course 
-            course="Algoritmos e Programação"
-            type="Graduação"
-            class= "M52"
-            image="https://i.imgur.com/dSG2ZLX.jpg"
-          />
-          <Course 
-            course="Algoritmos e Programação"
-            type="Graduação"
-            class= "M52"
-            image="https://i.imgur.com/dSG2ZLX.jpg"
-          />
-          <Course 
-            course="Algoritmos e Programação"
-            type="Graduação"
-            class= "M52"
-            image="https://i.imgur.com/dSG2ZLX.jpg"
-          />
-          
+          )}
         </div>
       </div>
     )

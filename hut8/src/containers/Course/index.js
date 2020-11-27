@@ -16,8 +16,8 @@ function Course(props){
         <div className="teacher">
           <img src={props.teacher.avatar} alt=""/>
           <div>
-            <h1>{props.teacher.name}</h1>
-            <h2>Professor responsável</h2>
+            <h2>{props.teacher.name}</h2>
+            <p>Professor responsável</p>
           </div>
         </div>
       </div>

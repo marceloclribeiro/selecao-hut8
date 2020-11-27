@@ -48,12 +48,12 @@
     border-radius: 50%;
     grid-area: avatar;
 }
-.teacher h1{
+.teacher h2{
     font-size: 20px;
     font-weight: 700;
     margin: 0;
 }
-.teacher h2{
+.teacher p{
     font-size: 14px;
     font-weight: 400;
 }

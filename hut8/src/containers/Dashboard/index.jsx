@@ -18,36 +18,17 @@ function Home(props){
       
       <h1>Próximas atividades</h1>
       <div className="next-tasks">
-        <Task 
-          course="Algoritmos e programação"
-          title="Enviar arquivo Peter Smokes"
-          image="https://i.imgur.com/aadwyfC.jpg" 
-          deadline="10/10/2020"
+        {props.nextTasks.map((task) => 
+          <Task
+            course={task.course}
+            title={task.title}
+            image={task.image}
+            deadline={task.deadline}
           />
-          <Task 
-          course="Projeto de Banco de Dados"
-          title="Enviar o esquema MySQL"
-          image="https://i.imgur.com/RgQrlAS.jpeg" 
-          deadline="10/10/2020"
-          />
-          <Task 
-          course="Algoritmos e programação"
-          title="Enviar arquivo Peter Smokes"
-          image="https://i.imgur.com/aadwyfC.jpg" 
-          deadline="10/10/2020"
-          />
-          <Task 
-          course="Algoritmos e programação"
-          title="Enviar arquivo Peter Smokes"
-          image="https://i.imgur.com/aadwyfC.jpg" 
-          deadline="10/10/2020"
-          />
-          
+        )}
       </div>
     </div>
   )
-
-
 }
 
 export default Home

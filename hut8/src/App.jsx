@@ -1,47 +1,14 @@
+import React from 'react'
 import './App.css';
-import Sidebar from './components/Sidebar'
-import Dashboard from './containers/Dashboard'
-import Courses from './containers/Courses'
-import Course from './containers/Course'
 import Routes from './Routes'
 
 function App() {
+
+
   return (
     <div className="App">
       <Routes />
-      {/* <Sidebar 
-        name="Fausto Silva"
-        course="Ciência da Computação"
-        avatar="https://i.imgur.com/aU48TWI.jpg"
-      /> */}
-      {/* <Dashboard 
-        enrolledCourses="02"
-        nextActivities="02"
-        onlineStudents="785"
-      /> */}
-      {/* <Courses /> */}
       
-      {/* <Course 
-        course= "Projeto de Banco de Dados"
-        type= "Graduação"
-        class="M72"
-        image= "https://i.imgur.com/GpfCzWB.jpg"
-        teacher = {{
-          name: 'Ana Maria Braga',
-          avatar: "https://i.imgur.com/Cq92E0k.jpg"
-        }}
-        overview= {{
-          nextActivities: 1,
-          credits: 4,
-          enrolledStudents: 53
-        }}
-        nextActivities= {{
-          course: "Projeto de Banco de Dados",
-          title: "Enviar o esquema MySQL",
-          image: "https://i.imgur.com/RgQrlAS.jpg",
-          deadline: "10/10/20"
-        }} 
-         /> */}
     </div>
   );
 }
@@ -59,3 +26,42 @@ export default App;
 //  global - css global
 //  services - api, requests
 
+//semana 3
+//cosnt [count, setCount] = useState({})
+//
+
+// const [count, setCount] = useState(0)
+
+//   const addNumber = () => {
+//     setCount(count + 1)
+//   }
+
+// voce clicou {count} vezes.
+//       <button onClick={addNumber}>
+//         soma
+//       </button>
+
+
+//--
+// const [menu, setMenu] = useState("dashboard")
+// <ul>
+//         <li><button onClick={ () => {setMenu("dashboard")}}  >dashboard</button></li>
+//         <li><button onClick={ () => {setMenu("courses")}}>meus cursos</button></li>
+//       </ul>
+//       {menu === "dashboard" ? (
+//         <h3>dashboard</h3>
+//       ):(
+//         <h3>meus cursos</h3>
+//       )}
+
+
+
+//use effect
+//useEffect(()=>{
+  //chama a requisição
+  //.then(res => {
+    // setBlablabla({
+
+    // }
+  // })
+// })

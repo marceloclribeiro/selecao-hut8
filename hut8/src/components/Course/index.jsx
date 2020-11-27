@@ -5,7 +5,7 @@ function Course(props){
     <div className="course-component">
       <img src={props.image} alt=""/>
       <p className="type">{props.type}</p>
-      <h1>{props.course}</h1>
+      <p className="course-name">{props.course}</p>
       <p className="class">{props.class}</p>
     </div>
   )
