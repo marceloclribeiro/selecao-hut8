@@ -1,69 +1,79 @@
-.course{
-    margin: 5% auto;
-    padding: 0 3%;
-    width: 85%;
+.course {
+  margin: 5% auto;
+  padding: 0 3%;
+  width: 85%;
 }
-.course h1{
-    font-weight: 600;
-    font-size: 26px;
-    color: #555;
-    margin-bottom: 12px;
+.course h1 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #555;
+  margin-bottom: 12px;
 }
-.summary{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5%;
+/* .summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5%;
+} */
+.info {
+  display: flex;
+  justify-content: space-between;
 }
-.info{
-    display: flex;
-    justify-content: space-between;
+.course-info {
+  font-weight: 600;
 }
-.course-info{
-    font-weight: 600;
+.course-info h1 {
+  margin: 0;
 }
-.course-info h1{
-    margin: 0;
+.course-info p {
+  font-size: 14px;
+  color: #737373;
 }
-.course-info p{
-    font-size: 14px;
-    color: #737373;
+.teacher {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 30% 70%;
+  grid-template-areas: 'avatar name';
 }
-.teacher{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 30% 70%;
-    grid-template-areas: "avatar name";
+.teacher div {
+  margin-left: 15px;
+  grid-row: 1/3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-.teacher div{
-    margin-left: 15px;
-    grid-row: 1/3;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+.teacher img {
+  width: 54px;
+  border-radius: 50%;
+  grid-area: avatar;
+  justify-self: center;
 }
-.teacher img{
-    width: 54px;
-    border-radius: 50%;
-    grid-area: avatar;
+.teacher h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
 }
-.teacher h2{
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0;
+.teacher p {
+  font-size: 14px;
+  font-weight: 400;
 }
-.teacher p{
-    font-size: 14px;
-    font-weight: 400;
+.course .summary {
+  margin-top: 20px;
 }
-.course .summary{
-    margin-top: 20px;
-
+.course .tasks {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px 5%;
 }
-.course .tasks{
+@media only screen and (max-width: 600px) {
+  .course {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px 5%;
+    margin: 0;
+    padding-top: 100px;
+  }
+  .teacher img {
+    width: 40px;
+  }
 }

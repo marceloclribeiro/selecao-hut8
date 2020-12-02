@@ -1,28 +1,28 @@
-.course-component{
-    margin-top: 20px;
-    background-color: #fafafa;
-    border-radius: 30px;
-    padding-bottom: 20px;
+.course-component {
+  margin-top: 20px;
+  background-color: #fafafa;
+  border-radius: 30px;
+  padding-bottom: 20px;
 }
-.course-component img{
-    border-radius: 30px 30px 0 0;
-    width: 100%;
+.course-component img {
+  border-radius: 30px 30px 0 0;
+  width: 100%;
 }
-.course-component .course-name{
-    padding-left: 20px;
-    font-weight: 400;
-    font-size: 16px;
-    color: #4b4b4b;
+.course-component .course-name {
+  padding: 0px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4b4b4b;
 }
-.type{
-    padding-left: 20px;
-    font-weight: 600;
-    font-size: 12px;
-    color: #737373;
+.type {
+  padding: 0px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #737373;
 }
-.course-class{
-    padding-left: 20px;
-    font-weight: 400;
-    font-size: 12px;
-    color: #8e8e8e;
+.course-class {
+  padding: 0px 20px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #8e8e8e;
 }

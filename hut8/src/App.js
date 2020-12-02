@@ -1,19 +1,16 @@
 import React from 'react'
-import './App.css';
+import './App.css'
 import Routes from './Routes'
 
 function App() {
-
-
   return (
-    <div className="App">
+    <div className='App'>
       <Routes />
-      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 
 //src
 //  assets - imagens,fontes, etc
@@ -41,7 +38,6 @@ export default App;
 //         soma
 //       </button>
 
-
 //--
 // const [menu, setMenu] = useState("dashboard")
 // <ul>
@@ -54,14 +50,12 @@ export default App;
 //         <h3>meus cursos</h3>
 //       )}
 
-
-
 //use effect
 //useEffect(()=>{
-  //chama a requisição
-  //.then(res => {
-    // setBlablabla({
+//chama a requisição
+//.then(res => {
+// setBlablabla({
 
-    // }
-  // })
+// }
+// })
 // })

@@ -1,22 +1,23 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './styles.css'
-function Sidebar(props){
+function Sidebar(props) {
+  return (
+    <div className='sidebar'>
+      <img src={props.avatar} className='icon' alt='Icone do usuario' />
+      <div className='testeee'>
+        <h2 className='user-name'>{props.name}</h2>
+        <p>{props.course}</p>
+      </div>
+      <NavLink exact to='/' activeClassName='selected'>
+        <p className='sidebar-link'>Dashboard</p>
+      </NavLink>
 
-    return (
-        <div className="sidebar">
-            <img src={props.avatar} className="icon" alt="Icone do usuario"/>
-            <h2 className="user-name">{props.name}</h2>
-            <p>{props.course}</p>
-            <NavLink exact to= '/' className="sidebar-link" activeClassName="selected">
-            Dashboard
-            </NavLink>
-            <NavLink exact to= '/courses' className="sidebar-link" activeClassName="selected">
-            Meus cursos
-            </NavLink>
-
-        </div>
-    )
+      <NavLink exact to='/courses' className='sidebar-link' activeClassName='selected'>
+        <p className='sidebar-link'>Meus cursos</p>
+      </NavLink>
+    </div>
+  )
 }
 
 export default Sidebar

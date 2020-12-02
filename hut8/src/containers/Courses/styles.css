@@ -1,21 +1,28 @@
-.courses{
-    margin: 5% auto;
-    width: 85%;
-    padding: 0 3%;
+.courses {
+  margin: 5% auto;
+  width: 85%;
+  padding: 0 3%;
 }
-.courses h1{
-    font-weight: 600;
-    font-size: 26px;
-    color: #555;
-    margin-bottom: 12px;
+.courses h1 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #555;
+  margin-bottom: 12px;
 }
 
-.content{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px 5%;
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px 5%;
 }
-.content div:hover{
-    box-shadow: 0 0 10px rgb(73, 73, 73), 0 0 5px rgb(186, 186, 187);
+.content div:hover {
+  box-shadow: 0 0 10px rgb(73, 73, 73), 0 0 5px rgb(186, 186, 187);
+}
+@media only screen and (max-width: 600px) {
+  .courses {
+    width: 100%;
+    margin: 0;
+    padding-top: 100px;
+  }
 }
