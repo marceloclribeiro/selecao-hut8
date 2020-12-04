@@ -1,56 +1,80 @@
-.sidebar{
-    background-color: #FAFAFA;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.sidebar {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.sidebar .icon {
+  margin-top: 25%;
+  width: 30%;
+  border-radius: 50%;
+}
+.sidebar .selected p {
+  font-weight: 700;
+}
+.sidebar h2.user-name {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #727272;
+}
+.sidebar p {
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #727272;
+}
+.sidebar p.sidebar-link {
+  margin-left: 20%;
+  align-self: flex-start;
+  font-size: 18px;
+  color: #6a6a6a;
+  padding: 10px;
+  margin-top: 30px;
+}
+.sidebar .sidebar-link:hover {
+  font-weight: 700;
+}
+.sidebar a {
+  display: contents;
+  text-decoration: none;
+}
+.sidebar .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+  }
+  .sidebar .icon {
+    margin: 0;
+    width: 60px;
+    margin-left: 10px;
+  }
+  .sidebar .user-info {
+    margin-left: 20px;
+    width: 200px;
     height: 100%;
-    grid-row: 1/3;
-}
-
-.icon{
-    margin-top: 25%;
-    width: 30%;
-    border-radius: 50%;
-}
-.sidebar h2.user-name{
-    margin-top: 16px;
-    font-weight: 700;
-    font-size: 20px;
-    color: #727272;
-}
-.sidebar p{
-    margin-top: 6;
-    font-weight: 400;
-    font-size: 14px;
-    color: #727272;
-}
-.sidebar h1{
-    margin-left: 20%;
-    align-self: flex-start;
+  }
+  .sidebar .user-info h2 {
     font-size: 18px;
-    color: #6a6a6a;
-    padding: 10px;
-}
-.sidebar h1.dashboard-link{
-    margin-top: 59px;
-    font-weight: 400;   /*700 se está nele*/
-}
-.sidebar h1.courses-link{
-    margin-top: 35px;
-    font-weight: 400;
-}
-.sidebar h1:hover{
-    font-weight: 700;
-}
-a{
-    display: contents;
-    text-decoration: none;
-}
+  }
+  .sidebar .user-info p {
+    font-size: 12px;
+    margin: 0;
+  }
 
-
-@media only screen and (max-width: 600px){
-    
-    .sidebar{
-        display: none;
-    }
+  .sidebar p.sidebar-link {
+    margin: 0;
+    align-self: center;
+  }
 }
