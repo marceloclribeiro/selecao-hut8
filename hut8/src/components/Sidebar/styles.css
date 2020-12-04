@@ -6,7 +6,7 @@
   height: 100%;
 }
 
-.icon {
+.sidebar .icon {
   margin-top: 25%;
   width: 30%;
   border-radius: 50%;
@@ -26,7 +26,7 @@
   font-size: 14px;
   color: #727272;
 }
-p.sidebar-link {
+.sidebar p.sidebar-link {
   margin-left: 20%;
   align-self: flex-start;
   font-size: 18px;
@@ -34,14 +34,14 @@ p.sidebar-link {
   padding: 10px;
   margin-top: 30px;
 }
-.sidebar-link:hover {
+.sidebar .sidebar-link:hover {
   font-weight: 700;
 }
-a {
+.sidebar a {
   display: contents;
   text-decoration: none;
 }
-.testeee {
+.sidebar .user-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,12 +60,20 @@ a {
     width: 60px;
     margin-left: 10px;
   }
-  .testeee {
+  .sidebar .user-info {
     margin-left: 20px;
     width: 200px;
     height: 100%;
   }
-  p.sidebar-link {
+  .sidebar .user-info h2 {
+    font-size: 18px;
+  }
+  .sidebar .user-info p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .sidebar p.sidebar-link {
     margin: 0;
     align-self: center;
   }

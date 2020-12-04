@@ -5,7 +5,7 @@ function Sidebar(props) {
   return (
     <div className='sidebar'>
       <img src={props.avatar} className='icon' alt='Icone do usuario' />
-      <div className='testeee'>
+      <div className='user-info'>
         <h2 className='user-name'>{props.name}</h2>
         <p>{props.course}</p>
       </div>

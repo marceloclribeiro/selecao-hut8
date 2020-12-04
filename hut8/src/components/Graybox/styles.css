@@ -34,3 +34,12 @@
   width: 30px;
   height: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+  .gray-box div {
+    display: none;
+  }
+  .gray-box p {
+    font-size: 18px;
+  }
+}
